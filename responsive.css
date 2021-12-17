@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .calculator-grid {
+        grid-template-columns: repeat(4, 85px);
+        grid-template-rows: 45px 80px;
+    }
+
+    .calculator-grid h1{
+        font-size: 1.2rem;
+    }
+
+    .output .previous-operand {
+        font-size: 1rem;
+    }
+
+    .output .current-operand {
+        font-size: 1.75rem;
+    }
+
+    .bg-keypad {
+        grid-template-columns: repeat(4, 62.5px);
+        grid-template-rows: repeat(5, 65px);
+    }
+}
