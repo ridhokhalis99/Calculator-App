@@ -3,10 +3,23 @@
   font-family: 'Spartan', sans-serif;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: hsl(222, 26%, 31%);
+}
+
+h1, h3 {
+  color: hsl(0, 0%, 100%);
+  margin: 0;
 }
 
 .calculator-grid {
@@ -15,11 +28,10 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 100px);
-  grid-template-rows: 60px 100px;
+  grid-template-rows: 50px 100px;
 }
 
-.calculator-grid h1{
-  color: hsl(0, 0%, 100%);
+.calculator-grid h1 {
   font-size: 1.5rem;
 }
 
@@ -34,7 +46,7 @@ body {
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 30px;
   word-wrap: break-word;
   word-break: break-all;
   border-radius: 15px;
